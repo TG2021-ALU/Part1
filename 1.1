@@ -34,11 +34,11 @@ if __name__ == '__main__':
             cv2.imshow('Preview', frame)
             key = cv2.waitKey(int(1000/fps))
             # 2.2.3 process commands
-            if key == ord('n'): 
-                break
+            
             if key == ord('q'): # Press q for quit
                 running = False
                 break
+            
             if key == 32: 
                 fname = IMG_PATH + 'line_' + f'{idx:03}' + '.jpg'
                 print('Saving to ' + fname)
